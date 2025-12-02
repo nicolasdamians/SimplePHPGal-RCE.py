@@ -1,5 +1,7 @@
 # SimplePHPGal-RCE.py RFI --> RCE
-Simple PHP Photo Gallery 0.7 is vulnerable to Unauthenticated RFI. This script will attempt to turn that into RCE by automatically hosting a PHP reverse shell and then calling that shell back. The attacker still needs to catch the shell with netcat or something similar. 
+Simple PHP Photo Gallery 0.7 and Simple PHP Photo Gallery 0.8 is vulnerable to Unauthenticated RFI. This script will attempt to turn that into RCE by automatically hosting a PHP reverse shell and then calling that shell back. The attacker still needs to catch the shell with netcat or something similar. 
+
+### You may need to change the port to something other than 4444 maybe try ports that the machine has open. ;)
 
 Credit: https://www.exploit-db.com/exploits/48424
 
@@ -20,6 +22,7 @@ positional arguments:
   attackerip           Kali IP address for reverse shell and http server
   
   attackerport         Port for the reverse shell.
+ 
 ### You may need to change the port to something other than 4444 maybe try ports that the machine has open.
 
 optional arguments:
